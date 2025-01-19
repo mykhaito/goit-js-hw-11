@@ -7,11 +7,20 @@
     <title>hw10</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.3/simple-lightbox.min.css" />
   </head>
   <body>
-    <ul class="nav">
-      <li><a href="./1-timer.html">Задание 1</a></li>
-      <li><a href="./2-snackbar.html">Задание 2</a></li>
-    </ul>
-  </body>
+    <header>
+        <form id="search-form">
+            <input type="text" name="searchQuery" placeholder="Введите ключевое слово" />
+            <button type="submit">Поиск</button>
+        </form>
+    </header>
+    <main>
+        <div class="loader hidden"></div>
+        <div class="gallery"></div>
+    </main>
+    <script type="module" src="main.js"></script>
+</body>
 </html>
