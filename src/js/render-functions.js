@@ -1,4 +1,12 @@
-export function createImageCard({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) {
+export function createImageCard({
+  webformatURL,
+  largeImageURL,
+  tags,
+  likes,
+  views,
+  comments,
+  downloads,
+}) {
   return `
       <a href="${largeImageURL}" class="gallery__item">
           <img src="${webformatURL}" alt="${tags}" class="gallery__image" />
